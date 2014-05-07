@@ -1,0 +1,3 @@
+[submodule "lame"]
+	path = lame
+	url = https://github.com/newbdez33/lame-ios-fat-build.git
