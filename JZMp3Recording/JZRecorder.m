@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 #import "JZRecorder.h"
+#import <AVFoundation/AVFoundation.h>
 
 static const int bufferByteSize = 1600;
 static const int sampeleRate = 16000;
@@ -29,33 +30,24 @@ static const int bitsPerChannel = 16;
 
 @implementation JZRecorder
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-                        
-        AudioSessionInitialize(NULL, NULL, NULL, (__bridge void *)(self));
-    }
-    return self;
-}
-
-
 // 设置录音格式
 - (void) setupAudioFormat:(UInt32) inFormatID SampleRate:(int) sampeleRate
 {
     memset(&_recordFormat, 0, sizeof(_recordFormat));
     _recordFormat.mSampleRate = sampeleRate;
     
-	UInt32 size = sizeof(_recordFormat.mChannelsPerFrame);
-    AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareInputNumberChannels, &size, &_recordFormat.mChannelsPerFrame);
+	//UInt32 size = sizeof(_recordFormat.mChannelsPerFrame);
+    //AudioSessionGetProperty(kAudioSessionProperty_CurrentHardwareInputNumberChannels, &size, &_recordFormat.mChannelsPerFrame);
 	_recordFormat.mFormatID = inFormatID;
 	if (inFormatID == kAudioFormatLinearPCM){
 		// if we want pcm, default to signed 16-bit little-endian
+        _recordFormat.mChannelsPerFrame = 1;
 		_recordFormat.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger | kLinearPCMFormatFlagIsPacked;
 		_recordFormat.mBitsPerChannel = bitsPerChannel;
 		_recordFormat.mBytesPerPacket = _recordFormat.mBytesPerFrame = (_recordFormat.mBitsPerChannel / 8) * _recordFormat.mChannelsPerFrame;
 		_recordFormat.mFramesPerPacket = 1;
 	}
+    
 }
 
 // 回调函数
@@ -77,11 +69,11 @@ void inputBufferHandler(void *inUserData, AudioQueueRef inAQ, AudioQueueBufferRe
 // 开始录音
 - (void) startRecording
 {
-    AudioSessionSetActive(true);
+
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
     
     // category
-    UInt32 category = kAudioSessionCategory_PlayAndRecord;
-    AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(category), &category);
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
         
     // format
     [self setupAudioFormat:kAudioFormatLinearPCM SampleRate:sampeleRate];
