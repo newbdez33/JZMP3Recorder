@@ -33,7 +33,7 @@
     NSOperationQueue *opetaionQueue;
 }
 
-@property (nonatomic, assign) NSString *currentMp3File;
+@property (nonatomic, strong) NSString *currentMp3File;
 
 + (instancetype)sharedClient;
 
