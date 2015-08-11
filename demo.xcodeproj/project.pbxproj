@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A416F5055181B3A87751FAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE74BACE080960698BB9493 /* libPods.a */; };
 		CE9D02F51919CB5400342D04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D02F41919CB5400342D04 /* Foundation.framework */; };
 		CE9D02F71919CB5400342D04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D02F61919CB5400342D04 /* CoreGraphics.framework */; };
 		CE9D02F91919CB5400342D04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D02F81919CB5400342D04 /* UIKit.framework */; };
@@ -16,26 +17,14 @@
 		CE9D03081919CB5400342D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D03061919CB5400342D04 /* Main.storyboard */; };
 		CE9D030B1919CB5400342D04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D030A1919CB5400342D04 /* ViewController.m */; };
 		CE9D030D1919CB5400342D04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D030C1919CB5400342D04 /* Images.xcassets */; };
-		CE9D03141919CB5400342D04 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D03131919CB5400342D04 /* XCTest.framework */; };
-		CE9D03151919CB5400342D04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D02F41919CB5400342D04 /* Foundation.framework */; };
-		CE9D03161919CB5400342D04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D02F81919CB5400342D04 /* UIKit.framework */; };
 		CE9D03301919CBD100342D04 /* JZMp3EncodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D032B1919CBD100342D04 /* JZMp3EncodeOperation.m */; };
 		CE9D03311919CBD100342D04 /* JZMp3RecordingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D032D1919CBD100342D04 /* JZMp3RecordingClient.m */; };
 		CE9D03321919CBD100342D04 /* JZRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D032F1919CBD100342D04 /* JZRecorder.m */; };
 		CE9D033F1919D8D200342D04 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D033E1919D8D200342D04 /* libmp3lame.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CE9D03171919CB5400342D04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE9D02E91919CB5400342D04 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE9D02F01919CB5400342D04;
-			remoteInfo = demo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		C381CC108773A35B2FD3013B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CE9D02F11919CB5400342D04 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D02F41919CB5400342D04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9D02F61919CB5400342D04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,7 +39,6 @@
 		CE9D03091919CB5400342D04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE9D030A1919CB5400342D04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE9D030C1919CB5400342D04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CE9D03121919CB5400342D04 /* demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D03131919CB5400342D04 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE9D032A1919CBD100342D04 /* JZMp3EncodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMp3EncodeOperation.h; sourceTree = "<group>"; };
 		CE9D032B1919CBD100342D04 /* JZMp3EncodeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMp3EncodeOperation.m; sourceTree = "<group>"; };
@@ -59,6 +47,8 @@
 		CE9D032E1919CBD100342D04 /* JZRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZRecorder.h; sourceTree = "<group>"; };
 		CE9D032F1919CBD100342D04 /* JZRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZRecorder.m; sourceTree = "<group>"; };
 		CE9D033E1919D8D200342D04 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp3lame.a; path = lame/lib/libmp3lame.a; sourceTree = "<group>"; };
+		D21CD9047EC0186D2D9CCF22 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FDE74BACE080960698BB9493 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,22 +60,22 @@
 				CE9D033F1919D8D200342D04 /* libmp3lame.a in Frameworks */,
 				CE9D02F91919CB5400342D04 /* UIKit.framework in Frameworks */,
 				CE9D02F51919CB5400342D04 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE9D030F1919CB5400342D04 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9D03141919CB5400342D04 /* XCTest.framework in Frameworks */,
-				CE9D03161919CB5400342D04 /* UIKit.framework in Frameworks */,
-				CE9D03151919CB5400342D04 /* Foundation.framework in Frameworks */,
+				4A416F5055181B3A87751FAA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		609DDEEC8103C0DAD7BF1243 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C381CC108773A35B2FD3013B /* Pods.debug.xcconfig */,
+				D21CD9047EC0186D2D9CCF22 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE9D02E81919CB5400342D04 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +83,7 @@
 				CE9D02FA1919CB5400342D04 /* demo */,
 				CE9D02F31919CB5400342D04 /* Frameworks */,
 				CE9D02F21919CB5400342D04 /* Products */,
+				609DDEEC8103C0DAD7BF1243 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				CE9D02F11919CB5400342D04 /* demo.app */,
-				CE9D03121919CB5400342D04 /* demoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +103,7 @@
 				CE9D02F61919CB5400342D04 /* CoreGraphics.framework */,
 				CE9D02F81919CB5400342D04 /* UIKit.framework */,
 				CE9D03131919CB5400342D04 /* XCTest.framework */,
+				FDE74BACE080960698BB9493 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9D03231919CB5400342D04 /* Build configuration list for PBXNativeTarget "demo" */;
 			buildPhases = (
+				0EA98CDC7E8F9E4FAB10785D /* Check Pods Manifest.lock */,
 				CE9D02ED1919CB5400342D04 /* Sources */,
 				CE9D02EE1919CB5400342D04 /* Frameworks */,
 				CE9D02EF1919CB5400342D04 /* Resources */,
+				1673F0437FB7AAC5DBFF07AB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,24 +168,6 @@
 			productReference = CE9D02F11919CB5400342D04 /* demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE9D03111919CB5400342D04 /* demoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE9D03261919CB5400342D04 /* Build configuration list for PBXNativeTarget "demoTests" */;
-			buildPhases = (
-				CE9D030E1919CB5400342D04 /* Sources */,
-				CE9D030F1919CB5400342D04 /* Frameworks */,
-				CE9D03101919CB5400342D04 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE9D03181919CB5400342D04 /* PBXTargetDependency */,
-			);
-			name = demoTests;
-			productName = demoTests;
-			productReference = CE9D03121919CB5400342D04 /* demoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +176,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Salmonapps;
-				TargetAttributes = {
-					CE9D03111919CB5400342D04 = {
-						TestTargetID = CE9D02F01919CB5400342D04;
-					};
-				};
 			};
 			buildConfigurationList = CE9D02EC1919CB5400342D04 /* Build configuration list for PBXProject "demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +191,6 @@
 			projectRoot = "";
 			targets = (
 				CE9D02F01919CB5400342D04 /* demo */,
-				CE9D03111919CB5400342D04 /* demoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,14 +206,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE9D03101919CB5400342D04 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA98CDC7E8F9E4FAB10785D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		1673F0437FB7AAC5DBFF07AB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE9D02ED1919CB5400342D04 /* Sources */ = {
@@ -260,22 +255,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE9D030E1919CB5400342D04 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE9D03181919CB5400342D04 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE9D02F01919CB5400342D04 /* demo */;
-			targetProxy = CE9D03171919CB5400342D04 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE9D02FD1919CB5400342D04 /* InfoPlist.strings */ = {
@@ -369,6 +349,7 @@
 		};
 		CE9D03241919CB5400342D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C381CC108773A35B2FD3013B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -388,6 +369,7 @@
 		};
 		CE9D03251919CB5400342D04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21CD9047EC0186D2D9CCF22 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,46 +384,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "lame/**";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		CE9D03271919CB5400342D04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "demo/demo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "demoTests/demoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CE9D03281919CB5400342D04 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/demo.app/demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "demo/demo-Prefix.pch";
-				INFOPLIST_FILE = "demoTests/demoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -462,15 +404,6 @@
 			buildConfigurations = (
 				CE9D03241919CB5400342D04 /* Debug */,
 				CE9D03251919CB5400342D04 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE9D03261919CB5400342D04 /* Build configuration list for PBXNativeTarget "demoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE9D03271919CB5400342D04 /* Debug */,
-				CE9D03281919CB5400342D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

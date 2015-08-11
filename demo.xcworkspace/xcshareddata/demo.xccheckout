@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC08B090-2EC1-41B4-A68F-E2385E16C44B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0032CDEA6D97660649411FE0E1B83270149648BE</key>
+		<string>https://github.com/newbdez33/lame-ios-fat-build.git</string>
+		<key>8ABBDAEE69AD694F911D400437B528E368858F78</key>
+		<string>github.com:newbdez33/JZMP3Recording.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>demo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0032CDEA6D97660649411FE0E1B83270149648BE</key>
+		<string>..lame/</string>
+		<key>8ABBDAEE69AD694F911D400437B528E368858F78</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:newbdez33/JZMP3Recording.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8ABBDAEE69AD694F911D400437B528E368858F78</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8ABBDAEE69AD694F911D400437B528E368858F78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JZMP3Recording</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0032CDEA6D97660649411FE0E1B83270149648BE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lame</string>
+		</dict>
+	</array>
+</dict>
+</plist>
