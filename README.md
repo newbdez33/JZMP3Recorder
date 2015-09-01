@@ -1,4 +1,4 @@
-JZMP3Recording
+JZMP3Recorder
 ==============
 
 Recording mp3 directly on iOS
